@@ -71,7 +71,7 @@ jobs:
       uses: docker/build-push-action@v5
       with:
         push: true
-        platforms: linux/amd64
+        platforms: linux/amd64,linux/arm/v8
         build-args: |
           IMAGE_TAG=${{ env.image_tag }}
         tags: |
