@@ -71,6 +71,8 @@ jobs:
       uses: docker/build-push-action@v5
       with:
         push: true
-	platforms: linux/amd64
+        platforms: linux/amd64
+        build-args: |
+          FILEBEAT_TAG=${{ env.image_tag }}
         tags: |
           ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.image_name }}:${{ env.image_tag }}
