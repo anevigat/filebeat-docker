@@ -73,6 +73,6 @@ jobs:
         push: true
         platforms: linux/amd64
         build-args: |
-          FILEBEAT_TAG=${{ env.image_tag }}
+          IMAGE_TAG=${{ env.image_tag }}
         tags: |
           ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.image_name }}:${{ env.image_tag }}

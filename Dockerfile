@@ -1,5 +1,5 @@
-ARG FILEBEAT_TAG="8.13.2"
+ARG IMAGE_TAG="8.13.2"
 
-FROM elastic/filebeat:${FILEBEAT_TAG}
+FROM elastic/filebeat:${IMAGE_TAG}
 
 ENV --strict.perms=false
